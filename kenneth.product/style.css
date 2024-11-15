@@ -1,8 +1,10 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body {
     font-family: 'Arial', sans-serif;
@@ -11,11 +13,13 @@ body {
     color: #333;
 }
 
+
 .container {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
 }
+
 
 header {
     background-color: #b9a67b;
@@ -53,6 +57,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #e1c771;
 }
+
 
 .product-section {
     display: flex;
@@ -118,63 +123,27 @@ nav ul li a:hover {
     transition: transform 0.3s ease;
 }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 2rem;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
+
+.about-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
 }
 
-.size-label {
-    font-size: 1.2rem;
+.about-section h2 {
+    font-size: 2.5rem;
     color: #34495e;
-    font-weight: 600;
-    margin-bottom: 8px;
-    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
-.size-dropdown {
-    width: 100%;
-    max-width: 150px;
-    padding: 10px;
-    margin: 10px 0 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #f3f3f3;
-    color: #333;
-    cursor: pointer;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
 }
 
-.size-dropdown:hover {
-    background-color: #e9ecef;
-}
-
-.size-dropdown:focus {
-    border-color: #e74c3c;
-    outline: none;
-}
-
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
 .testimonials {
     padding: 80px 0;
@@ -208,6 +177,157 @@ nav ul li a:hover {
     color: #2c3e50;
 }
 
+/* FAQ Section */
+.faq-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq-section details {
+    margin-bottom: 20px;
+}
+
+.faq-section details summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #34495e;
+    cursor: pointer;
+}
+
+.faq-section details p {
+    font-size: 1rem;
+    color: #555;
+    padding: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.contact-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-section label {
+    font-size: 1em;
+    font-weight: bold;
+    color: #444;
+    text-align: left;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.contact-section textarea {
+    resize: vertical;
+}
+
+.contact-section button {
+    padding: 12px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #0056b3;
+}
+
+.newsletter {
+    background-color: #9e894d;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #e1c77c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #c0392b;
+}
+
+/* Footer */
 footer {
     background-color: #9c9062;
     color: white;
@@ -222,6 +342,7 @@ footer p {
     margin: 0;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 768px) {
     .product-section {
         flex-direction: column;
@@ -251,5 +372,17 @@ footer p {
     .testimonial p {
         font-size: 1rem;
     }
+
+    .newsletter form {
+        flex-direction: column;
+    }
+
+    .newsletter input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .contact-section form {
+        gap: 10px;
+    }
 }
-    

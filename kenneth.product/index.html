@@ -8,22 +8,21 @@
 </head>
 <body>
 
-    <!-- Header -->
+
     <header>
         <div class="container">
             <h1>Richboyz</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home ">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Product Section -->
+
     <section class="product-section">
         <div class="container">
             <div class="product-info">
@@ -31,7 +30,7 @@
                 <p class="price">$69.99</p>
                 <p class="description">Our classic hoodie, made from soft cotton, perfect for all seasons. Available in various colors and sizes.</p>
                 
-                <!-- Size Selector -->
+                
                 <label for="size" class="size-label">Choose Size:</label>
                 <select id="size" class="size-dropdown">
                     <option value="small">Small</option>
@@ -40,13 +39,13 @@
                     <option value="extra-large">Extra Large</option>
                 </select>
                 
-                <!-- Buy Now button links to the website -->
+              
                 <a href="https://richboyz.com/" target="_blank">
                     <button class="buy-button">Buy Now</button>
                 </a>
             </div>
             <div class="product-image-gallery">
-                <!-- Clickable image linking to the external website -->
+                
                 <a href="https://richboyz.com/" target="_blank">
                     <img id="product-image" src="2richboyz.jpg" alt="Hoodie">
                 </a>
@@ -54,7 +53,81 @@
         </div>
     </section>
 
-    <!-- Footer -->
+   
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Richboyz</h2>
+            <p>At Richboyz, we believe in blending style, comfort, and quality to create clothing that speaks to your unique personality. Our hoodies are crafted with care and designed for those who dare to stand out.</p>
+            <p>Founded in 1969, we’re dedicated to sustainable fashion and creating products you’ll love for years to come.</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"The Richboyz hoodie is my go-to for every casual occasion. It’s stylish and incredibly comfortable!"</p>
+                <p>- Keben Pano</p>
+            </div>
+            <div class="testimonial">
+                <p>"Amazing quality and fits perfectly. Definitely worth the price!"</p>
+                <p>- Dre' qt.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>What sizes are available?</summary>
+                <p>Our hoodies are available in Small, Medium, Large, and Extra-Large sizes.</p>
+            </details>
+            <details>
+                <summary>Do you offer international shipping?</summary>
+                <p>Yes, we ship to most countries worldwide. Shipping fees and times vary by location.</p>
+            </details>
+            <details>
+                <summary>How do I care for my hoodie?</summary>
+                <p>We recommend machine washing in cold water and air drying to maintain the hoodie’s quality.</p>
+            </details>
+        </div>
+    </section>
+
+   
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out!</p>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+ 
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for exclusive offers and the latest updates.</p>
+            <form action="subscribe.php" method="post">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    
     <footer>
         <div class="container">
             <p>&copy; 2024 Richboyz. All rights reserved.</p>
